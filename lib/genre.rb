@@ -17,6 +17,6 @@ class Genre
   end
   
   def artists
-    Songs.all.select {|song| .
+    Songs.all.collect {|song| song.artist}
 
 end
