@@ -15,6 +15,13 @@ class Artist
     @@all
   end
   
+  def genres
+    Song.all.map do |song|
+      song.genre
+    end
+  end
+
+
   def new_song(name, genre)
     song = Song.new(name, self, genre)
     @songs << song
