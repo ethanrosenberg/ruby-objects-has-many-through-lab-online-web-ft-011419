@@ -13,6 +13,17 @@ class Artist
     @@all
   end
   
+  def songs
+    Song.all.select {|song| song.artist == self}
+  end
+
+  def genres
+    Song.all.map do |song|
+      song.genre
+    end
+  end
+  
+  
   def genres
     Song.all.map do |song|
       song.genre
