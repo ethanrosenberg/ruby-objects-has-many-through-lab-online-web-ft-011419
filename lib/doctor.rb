@@ -19,6 +19,7 @@ class Doctor
     appt = Appointment.new(date, patient, self)
     @appointments << appt
     @patients << patient
+    binding.pry
     appt
   end
   
