@@ -18,9 +18,8 @@ class Artist
   end
 
   def genres
-    Song.all.collect {|song| 
-      song.genre
-    end
+    #binding.pry
+    Song.all.collect  {|song| song.genre}
   end
   
   
