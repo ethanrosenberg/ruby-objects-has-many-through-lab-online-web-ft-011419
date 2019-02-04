@@ -15,5 +15,8 @@ class Genre
   def songs
     Song.all.select {|song| song.genre = @name}
   end
+  
+  def artists
+    Songs.all.select {|song| .
 
 end
