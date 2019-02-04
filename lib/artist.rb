@@ -23,12 +23,6 @@ class Artist
     Song.all.collect  {|song| song.genre}
   end
   
-  
-  def genres
-    Song.all.map do |song|
-      song.genre
-    end
-  end
 
 
   def new_song(name, genre)
